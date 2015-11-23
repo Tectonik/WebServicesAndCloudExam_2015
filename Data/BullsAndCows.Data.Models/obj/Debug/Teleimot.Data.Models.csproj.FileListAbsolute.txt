@@ -1,0 +1,16 @@
+C:\Users\softwareacademy\Desktop\Exam-Preparation\Data\BullsAndCows.Data.Models\bin\Debug\EntityFramework.dll
+C:\Users\softwareacademy\Desktop\Exam-Preparation\Data\BullsAndCows.Data.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\softwareacademy\Desktop\Exam-Preparation\Data\BullsAndCows.Data.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\softwareacademy\Desktop\Exam-Preparation\Data\BullsAndCows.Data.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\softwareacademy\Desktop\Exam-Preparation\Data\BullsAndCows.Data.Models\bin\Debug\EntityFramework.xml
+C:\Users\softwareacademy\Desktop\Exam-Preparation\Data\BullsAndCows.Data.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\softwareacademy\Desktop\Exam-Preparation\Data\BullsAndCows.Data.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\softwareacademy\Desktop\Exam-Preparation\Data\BullsAndCows.Data.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\softwareacademy\Desktop\Exam-Preparation\Data\BullsAndCows.Data.Models\obj\Debug\Teleimot.Data.Models.csprojResolveAssemblyReference.cache
+C:\Users\softwareacademy\Desktop\Exam-Preparation\Data\BullsAndCows.Data.Models\bin\Debug\Teleimot.Data.Models.dll.config
+C:\Users\softwareacademy\Desktop\Exam-Preparation\Data\BullsAndCows.Data.Models\bin\Debug\Teleimot.Data.Models.dll
+C:\Users\softwareacademy\Desktop\Exam-Preparation\Data\BullsAndCows.Data.Models\bin\Debug\Teleimot.Data.Models.pdb
+C:\Users\softwareacademy\Desktop\Exam-Preparation\Data\BullsAndCows.Data.Models\bin\Debug\Teleimot.Common.dll
+C:\Users\softwareacademy\Desktop\Exam-Preparation\Data\BullsAndCows.Data.Models\bin\Debug\Teleimot.Common.pdb
+C:\Users\softwareacademy\Desktop\Exam-Preparation\Data\BullsAndCows.Data.Models\obj\Debug\Teleimot.Data.Models.dll
+C:\Users\softwareacademy\Desktop\Exam-Preparation\Data\BullsAndCows.Data.Models\obj\Debug\Teleimot.Data.Models.pdb
