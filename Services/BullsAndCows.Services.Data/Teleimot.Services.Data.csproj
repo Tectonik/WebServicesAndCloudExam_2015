@@ -59,12 +59,6 @@
   <ItemGroup>
     <Compile Include="Contracts\IRealEstateService.cs" />
     <Compile Include="RealEstateService.cs" />
-    <Compile Include="Contracts\IGamesService.cs" />
-    <Compile Include="Contracts\IGuessService.cs" />
-    <Compile Include="Contracts\IHighScoreService.cs" />
-    <Compile Include="GamesService.cs" />
-    <Compile Include="GuessService.cs" />
-    <Compile Include="HighScoreService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -5,6 +5,7 @@
     using Teleimot.Data.Models;
     using Teleimot.Data.Repositories;
     using Contracts;
+    using System;
 
     public class RealEstateService : IRealEstateService
     {
@@ -28,6 +29,22 @@
             var n = m.Take(take);
 
             return n;
+        }
+
+        public RealEstate CreateEstate(RealEstate estate)
+        {
+            this.realEstates.Add(estate);
+            this.realEstates.SaveChanges();
+
+            return estate;
+        }
+
+        public IQueryable<RealEstate> GetEstateDetails(int id)
+        {
+            return this
+                    .realEstates
+                    .All()
+                    .Where(estate => estate.Id == id);
         }
     }
 }

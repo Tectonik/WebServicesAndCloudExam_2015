@@ -1,9 +1,8 @@
 ﻿namespace Teleimot.Web.Api.Controllers
 {
     using AutoMapper.QueryableExtensions;
-    using Microsoft.AspNet.Identity;
     using System.Web.Http;
-    using Teleimot.Services.Data.Contracts;
+    using Services.Data.Contracts;
     using Models.Games;
     using System.Linq;
     using Data.Models;
@@ -46,8 +45,21 @@
         [Route("RealEstates")]
         public IHttpActionResult Post([FromBody] RealEstate estateInfo)
         {
-            //return this.Created<string>("", "");
-            return this.Ok(estateInfo);
+            if (estateInfo == null)
+            {
+                return this.BadRequest("Estate info cannot be empty");
+            }
+            else if (this.ModelState.IsValid == false)
+            {
+                return this.BadRequest("Error in estate info");
+            }
+
+            var result = this.realEstates
+                .GetEstateDetails(estateInfo.Id)
+                .ProjectTo<ListedRealEstateResponseModel>()
+                .FirstOrDefault();
+
+            return this.Created(string.Format("/api/RealEstates/{0}", estateInfo.Id), 6);
         }
     }
 }

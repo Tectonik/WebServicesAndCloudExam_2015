@@ -8,19 +8,19 @@
 
     public class User : IdentityUser
     {
-        private ICollection<Guess> guesses;
+        private ICollection<RealEstate> ads;
 
         public User()
         {
-            this.guesses = new HashSet<Guess>();
+            this.ads = new HashSet<RealEstate>();
         }
 
         public int Rank { get; set; }
 
-        public virtual ICollection<Guess> Guesses
+        public virtual ICollection<RealEstate> Guesses
         {
-            get { return this.guesses; }
-            set { this.guesses = value; }
+            get { return this.ads; }
+            set { this.ads = value; }
         }
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<User> manager, string authenticationType)

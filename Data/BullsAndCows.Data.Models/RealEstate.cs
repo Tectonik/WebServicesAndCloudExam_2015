@@ -3,6 +3,7 @@
     using System;
     using System.ComponentModel.DataAnnotations;
     using Enumerations;
+    using System.Collections.Generic;
 
     public class RealEstate
     {
@@ -39,10 +40,10 @@
         public string Contact { get; set; }
 
         [Range(1, 5)]
-        public int Rating { get; set; }
+        public ICollection<int> Rating { get; set; }
 
         [MinLength(10)]
         [MaxLength(500)]
-        public string Comments { get; set; }
+        public ICollection<string> Comments { get; set; }
     }
 }

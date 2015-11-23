@@ -216,10 +216,8 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\GamesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RealEstateController.cs" />
-    <Compile Include="Controllers\ScoresController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -228,13 +226,7 @@
     <Compile Include="Infrastructure\Validation\ValidateModelAttribute.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Games\CreateGameRequestModel.cs" />
-    <Compile Include="Models\Games\BaseGameRequestModel.cs" />
-    <Compile Include="Models\Games\GameDetailsResponseModel.cs" />
-    <Compile Include="Models\Games\ListedGameResponseModel.cs" />
-    <Compile Include="Models\Games\ListedRealEstateResponseModel.cs" />
-    <Compile Include="Models\Guesses\GuessDetailsResponseModel.cs" />
-    <Compile Include="Models\HighScore\HighScoreResponseModel.cs" />
+    <Compile Include="Models\ListedRealEstateResponseModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
