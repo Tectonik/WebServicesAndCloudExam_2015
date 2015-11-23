@@ -3,7 +3,6 @@
     using System;
     using System.Web;
     using Common.Constants;
-    using Common.Providers;
     using Data;
     using Data.Repositories;
     using Ninject;
@@ -40,7 +39,7 @@
         {
             DependenciesRegistration(kernel);
 
-            kernel.Bind<IRandomProvider>().To<RandomProvider>();
+            //kernel.Bind<IRandomProvider>().To<RandomProvider>();
 
             kernel.Bind(b => b
                 .From(Assemblies.DataServices)

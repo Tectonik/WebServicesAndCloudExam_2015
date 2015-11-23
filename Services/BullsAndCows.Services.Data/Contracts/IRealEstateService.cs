@@ -10,5 +10,7 @@ namespace Teleimot.Services.Data.Contracts
         RealEstate CreateEstate(RealEstate estate);
 
         IQueryable<RealEstate> GetEstateDetails(int id);
+
+        //IQueryable<RealEstate> GetTop10();
     }
 }

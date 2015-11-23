@@ -7,7 +7,6 @@
     using System.Linq;
     using Data.Models;
 
-    // TODO FIX THIS RETURN SHITE IN 5 MINUTES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     [RoutePrefix("api")]
     public class RealEstateController : ApiController
     {
@@ -41,6 +40,55 @@
             return this.InternalServerError();
         }
 
+        //[Route("RealEstates")]
+        //public IHttpActionResult Get()
+        //{
+        //    var estates = this
+        //                   .realEstates
+        //                   .GetTop10()
+        //                   .ProjectTo<ListedRealEstateResponseModel>();
+
+        //    return this.Ok(estates);
+        //}
+
+        //[Authorize]
+        //[Route("RealEstates/{id}")]
+        //public IHttpActionResult Get(string id)
+        //{
+        //    int idNumber = 0;
+
+        //    if (int.TryParse(id, out idNumber))
+        //    {
+        //        var result = this.realEstates.GetEstateDetails(idNumber);
+
+        //        if (result != null)
+        //        {
+        //            return this.Ok(result);
+        //        }
+        //    }
+
+        //    return this.BadRequest("Id is not found or invalid");
+        //}
+
+        [Authorize]
+        [Route("RealEstates/{id}")]
+        public IHttpActionResult Get(string id)
+        {
+            int idNumber = 0;
+
+            if (int.TryParse(id, out idNumber))
+            {
+                var result = this.realEstates.GetEstateDetails(idNumber);
+
+                if (result != null)
+                {
+                    return this.Ok(result);
+                }
+            }
+
+            return this.BadRequest("Id is not found or invalid");
+        }
+
         [Authorize]
         [Route("RealEstates")]
         public IHttpActionResult Post([FromBody] RealEstate estateInfo)
@@ -54,12 +102,14 @@
                 return this.BadRequest("Error in estate info");
             }
 
-            var result = this.realEstates
-                .GetEstateDetails(estateInfo.Id)
-                .ProjectTo<ListedRealEstateResponseModel>()
-                .FirstOrDefault();
+            this.realEstates.CreateEstate(estateInfo);
 
-            return this.Created(string.Format("/api/RealEstates/{0}", estateInfo.Id), 6);
+            var result = this.realEstates;
+            var second = result.GetEstateDetails(estateInfo.Id);
+            var third = second.ProjectTo<ListedRealEstateResponseModel>();
+            var fourth = third.FirstOrDefault();
+
+            return this.Created(string.Format("/api/RealEstates/{0}", estateInfo.Id), fourth);
         }
     }
 }

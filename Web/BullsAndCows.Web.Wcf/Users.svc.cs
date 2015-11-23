@@ -1,13 +1,10 @@
-﻿using Teleimot.Web.Wcf.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.ServiceModel;
-using System.Text;
-
-namespace Teleimot.Web.Wcf
+﻿namespace Teleimot.Web.Wcf
 {
+    using Models;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.ServiceModel;
+
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall)]
     public class Users : BaseService, IUsers
     {

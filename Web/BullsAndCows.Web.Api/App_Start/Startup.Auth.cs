@@ -1,14 +1,12 @@
-﻿using System;
-using Microsoft.AspNet.Identity;
-using Microsoft.Owin;
-using Microsoft.Owin.Security.Cookies;
-using Microsoft.Owin.Security.OAuth;
-using Owin;
-using Teleimot.Web.Api.Providers;
-using Teleimot.Data;
-
-namespace Teleimot.Web.Api
+﻿namespace Teleimot.Web.Api
 {
+    using System;
+    using Microsoft.Owin;
+    using Microsoft.Owin.Security.OAuth;
+    using Owin;
+    using Teleimot.Web.Api.Providers;
+    using Teleimot.Data;
+
     public partial class Startup
     {
         public static OAuthAuthorizationServerOptions OAuthOptions { get; private set; }

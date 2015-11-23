@@ -1,11 +1,10 @@
 ﻿namespace Teleimot.Web.Api.Models.Games
 {
-    using System;
     using AutoMapper;
-    using Teleimot.Data.Models;
-    using Teleimot.Web.Api.Infrastructure.Mappings;
+    using Data.Models;
+    using Infrastructure.Mappings;
 
-    public class ListedRealEstateResponseModel
+    public class ListedRealEstateResponseModel : IMapFrom<RealEstate>, IHaveCustomMappings
     {
         public int Id { get; set; }
 

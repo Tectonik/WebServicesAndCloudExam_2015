@@ -1,11 +1,9 @@
 ﻿namespace Teleimot.Services.Data
 {
     using System.Linq;
-    using Common.Constants;
     using Teleimot.Data.Models;
     using Teleimot.Data.Repositories;
     using Contracts;
-    using System;
 
     public class RealEstateService : IRealEstateService
     {
@@ -16,19 +14,19 @@
             this.realEstates = realEstates;
         }
 
+        // Nobody said /api/RealEstates?skip=S&take=T shouldn't be sorted by date & time soo....
         public IQueryable<RealEstate> GetPublicRealEstates(int skip = 0, int take = 10)
         {
             // TODO take >x 100
 
-            var x = this
-                .realEstates;
+            var result = this
+                           .realEstates
+                           .All()
+                           .OrderBy(estate => estate.ConstructionYear)
+                           .Skip(skip)
+                           .Take(take);
 
-            var y = x.All();
-            var z = y.OrderBy(estate => estate.TimeOfCreation);
-            var m = z.Skip(skip);
-            var n = m.Take(take);
-
-            return n;
+            return result;
         }
 
         public RealEstate CreateEstate(RealEstate estate)
@@ -46,5 +44,24 @@
                     .All()
                     .Where(estate => estate.Id == id);
         }
+
+        // TODO DO
+        public IQueryable<RealEstate> GetEstateGeneralInformation(int id)
+        {
+            return this
+                    .realEstates
+                    .All()
+                    .Where(estate => estate.Id == id);
+        }
+
+        //public IQueryable<RealEstate> GetTop10()
+        //{
+        //    var topEstates = this
+        //                    .GetPublicRealEstates()
+        //                    .OrderByDescending(x => x.DateTimeOfCreation)
+        //                    .Take(10);
+
+        //    return topEstates;
+        //}
     }
 }

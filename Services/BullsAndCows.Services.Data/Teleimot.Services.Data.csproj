@@ -57,7 +57,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommentsService.cs" />
     <Compile Include="Contracts\IRealEstateService.cs" />
+    <Compile Include="Contracts\ICommentsService.cs" />
     <Compile Include="RealEstateService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

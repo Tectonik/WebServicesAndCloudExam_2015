@@ -2,3 +2,7 @@ C:\Users\softwareacademy\Desktop\Exam-Preparation\BullsAndCows.Common\bin\Debug\
 C:\Users\softwareacademy\Desktop\Exam-Preparation\BullsAndCows.Common\bin\Debug\Teleimot.Common.pdb
 C:\Users\softwareacademy\Desktop\Exam-Preparation\BullsAndCows.Common\obj\Debug\Teleimot.Common.dll
 C:\Users\softwareacademy\Desktop\Exam-Preparation\BullsAndCows.Common\obj\Debug\Teleimot.Common.pdb
+C:\Users\softwareacademy\Desktop\WebServicesAndCloudExam_2015\BullsAndCows.Common\bin\Debug\Teleimot.Common.dll
+C:\Users\softwareacademy\Desktop\WebServicesAndCloudExam_2015\BullsAndCows.Common\bin\Debug\Teleimot.Common.pdb
+C:\Users\softwareacademy\Desktop\WebServicesAndCloudExam_2015\BullsAndCows.Common\obj\Debug\Teleimot.Common.dll
+C:\Users\softwareacademy\Desktop\WebServicesAndCloudExam_2015\BullsAndCows.Common\obj\Debug\Teleimot.Common.pdb
