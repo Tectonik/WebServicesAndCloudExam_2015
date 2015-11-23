@@ -20,6 +20,11 @@ namespace Teleimot.Web.Api
             // Web API routes
             config.MapHttpAttributeRoutes();
 
+           // config.Routes.MapHttpRoute(
+           //    name: "UWOTM8",
+           //    routeTemplate: "api/RealEstates"
+           //);
+
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",

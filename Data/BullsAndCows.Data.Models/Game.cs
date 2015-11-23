@@ -6,7 +6,7 @@
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
 
-    public class Game
+    public class sGame
     {
         private ICollection<Guess> guesses;
 

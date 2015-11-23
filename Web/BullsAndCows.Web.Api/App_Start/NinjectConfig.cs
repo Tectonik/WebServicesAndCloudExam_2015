@@ -9,12 +9,15 @@
     using Ninject;
     using Ninject.Extensions.Conventions;
     using Ninject.Web.Common;
+    using Services.Data.Contracts;
+    using Services.Data;
 
     public static class NinjectConfig
     {
         public static Action<IKernel> DependenciesRegistration = kernel =>
         {
             kernel.Bind<ITeleimotDbContext>().To<TeleimotDbContext>();
+            //kernel.Bind<IRealEstateService>().To<RealEstateService>();
             kernel.Bind(typeof(IRepository<>)).To(typeof(GenericRepository<>));
         };
 

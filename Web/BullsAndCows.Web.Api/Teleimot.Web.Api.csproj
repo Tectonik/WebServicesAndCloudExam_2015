@@ -218,6 +218,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\GamesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RealEstateController.cs" />
     <Compile Include="Controllers\ScoresController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -231,6 +232,7 @@
     <Compile Include="Models\Games\BaseGameRequestModel.cs" />
     <Compile Include="Models\Games\GameDetailsResponseModel.cs" />
     <Compile Include="Models\Games\ListedGameResponseModel.cs" />
+    <Compile Include="Models\Games\ListedRealEstateResponseModel.cs" />
     <Compile Include="Models\Guesses\GuessDetailsResponseModel.cs" />
     <Compile Include="Models\HighScore\HighScoreResponseModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
